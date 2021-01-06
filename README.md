@@ -1,2 +1,2 @@
-# CC-VMeet-Android
+# Brief Meet
 
