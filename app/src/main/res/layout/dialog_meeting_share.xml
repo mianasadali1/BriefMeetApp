@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_gravity="center"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0sp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:text="Copy this to invite others"
+            android:textColor="@color/primaryText"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:layout_marginTop="10dp"
+            android:text="Copy and share this code with people that you want to meet with."
+            android:textColor="@color/primaryText"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtMeetingURL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text=""
+                android:textColor="@color/primaryText"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:backgroundTint="@color/colorPrimary"
+                android:background="@drawable/ic_copy"
+                android:id="@+id/imgCopy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/imgShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/ic_share"
+                android:backgroundTint="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnContinue"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/continue_meeting"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            app:rippleColor="@color/colorPrimaryRipple"
+            app:backgroundTint="@color/colorPrimary"
+            app:cornerRadius="20dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

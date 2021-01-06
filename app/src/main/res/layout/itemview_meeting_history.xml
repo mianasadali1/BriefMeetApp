@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/llMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start|center"
+                android:orientation="horizontal"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:layout_weight="1"
+        android:gravity="center|start"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Meet"
+
+            android:textColor="@color/primaryText"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="05-Jun"
+            android:textColor="@color/secondaryText"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:drawableLeft="@drawable/ic_duration"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/secondaryText"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="@color/secondaryText"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnJoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:stateListAnimator="@null"
+                    android:text="@string/rejoin"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="5dp"
+                    app:strokeColor="@color/colorPrimary"
+                    app:strokeWidth="1.5dp" />
+
+            </LinearLayout>

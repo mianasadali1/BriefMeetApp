@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">Brief Meet</string>
+
+    <string name="version">Version %1$s</string>
+    <string name="ok">OK</string>
+
+    <string name="email">Email Address</string>
+    <string name="mobile">Mobile</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="signup">Sign Up</string>
+    <string name="signin">Sign In</string>
+    <string name="create_account">Create Account</string>
+    <string name="errEmailRequired">Enter email</string>
+    <string name="errMeetingCode">Enter meeting id</string>
+    <string name="errMeetingCodeInValid">Enter valid meeting id</string>
+    <string name="errMeetingSubject">Enter meeting subject</string>
+    <string name="errValidEmailRequired">Enter valid email</string>
+    <string name="errPasswordRequired">Enter password</string>
+    <string name="errPasswordTooShort">Password too short, enter minimum 6 characters!</string>
+    <string name="err_internet">Your network is unavailable. Check your data or wifi connection.</string>
+    <string name="verify_email">Verify Your Email</string>
+    <string name="verify">Verify</string>
+    <string name="menu_home">Home</string>
+    <string name="exit">Repeat this action to exit app</string>
+    <string name="menu_settings">Settings</string>
+    <string name="profile">Profile</string>
+    <string name="save">Save</string>
+    <string name="name">Name</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_condition">Terms &amp; Conditions</string>
+    <string name="feedback">Refer your friends</string>
+    <string name="logout">Logout</string>
+    <string name="help">Help</string>
+    <string name="err_mobile">Enter mobile</string>
+    <string name="err_title">Enter title</string>
+    <string name="err_valid_mobile">Enter valid mobile</string>
+    <string name="email_exists">Email already exists</string>
+    <string name="mobile_does_not_exists">Mobile doesn\'t exists</string>
+    <string name="err_name">Enter name</string>
+    <string name="permission_msg">This app needs permission to use some features. You can grant them in app settings.</string>
+    <string name="permission_msg_never_checked">You have denied some permissions. Allow permissions from app settings.</string>
+    <string name="go_to_settings">Go to settings</string>
+    <string name="yes_grant_permission">Yes, Grant permission(s)</string>
+    <string name="no">No</string>
+    <string name="select_image">Select Image</string>
+    <string name="from_camera">From Camera</string>
+    <string name="pick_from_gallery">From Gallery</string>
+    <string name="processing_image">Processing image</string>
+    <string name="crop">Crop</string>
+    <string name="uploading_image">Uploading image</string>
+    <string name="no_history_found">History not available</string>
+    <string name="no_events_found">Schedule not available</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+    <string name="update">Update</string>
+    <string name="title">Title</string>
+    <string name="select_date">Select date</string>
+    <string name="select_time">Select time</string>
+    <string name="select_start_time">Select start time</string>
+    <string name="select_end_time">Select end time</string>
+    <string name="select_duration">Select duration</string>
+    <string name="delete">Delete</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="authenticating">Authenticating...</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="failed_to_sent_email">Failed to send reset email!</string>
+    <string name="we_have_sent_instructions">We have sent you instructions to reset your password!</string>
+    <string name="new_meeting">New Meeting</string>
+    <string name="meeting_code">Meeting ID</string>
+    <string name="meeting_history">History</string>
+    <string name="subject">Subject</string>
+    <string name="calendar">Calendar</string>
+    <string name="join_a_meeting">Join a meeting</string>
+    <string name="join">Join Meeting</string>
+    <string name="rejoin">Rejoin</string>
+    <string name="schedule">Schedule</string>
+    <string name="schedule_meeting">Schedule Meeting</string>
+    <string name="continue_meeting">Continue</string>
+    <string name="meeting_not_exist">Meeting doesn\'t exist.</string>
+    <string name="start">Start</string>
+    <string name="meeting_saved">Meeting Saved</string>
+    <string name="meeting_scheduled">Meeting Scheduled</string>
+    <string name="get_app_format">Get %s!</string>
+
+    <string name="app_id">ca-app-pub-5950778900852242~7091988976</string>
+    <string name="banner_id">ca-app-pub-5950778900852242/5428194141</string>
+    <string name="fullpage_ad">ca-app-pub-5950778900852242/5994529723</string>
+
+    <string name="facebook_app_id">195877082142400</string>
+    <string name="fb_login_protocol_scheme">fb195877082142400</string>
+
+    <string name="done">Done</string>
+    <string name="add_to_calendar">Add to Calendar</string>
+    <string name="update_now">Update Now</string>
+    <string name="today_meeting_history">Today\'s meeting history</string>
+    <string name="help_tutorial"><![CDATA[Help & Tutorial]]></string>
+    <string name="message_1">The host can take all the functions and control the settings. Co-host can attend the meeting and take all the features in meeting.</string>
+    <string name="message_2">You can set reminders to notify yourself at the time of meeting.</string>
+    <string name="message_3">When you feel confused about anything, you can send messages to the people in meeting.</string>
+    <string name="message_4">Meeting history is used to check meetings you have joined. Any meeting can be re-joined or deleted.</string>
+    <string name="message_5">Let\'s start meeting.</string>
+    <string name="title_1">Start a Meeting</string>
+    <string name="title_2">Schedule Your Meeting</string>
+    <string name="title_3">Message Your Team</string>
+    <string name="title_4">Meeting History</string>
+
+
+    <string name="term_url">https://briefmeet.blogspot.com/2020/12/terms-conditions.html</string>
+    <string name="privacy_url">https://briefmeet.blogspot.com/2020/12/privacy-policy.html</string>
+    <string name="help_url">https://www.termsandcondiitionssample.com/live.php?token=c97h7QrUK9z6RVVC4oKsZIwexGjXcKvt</string>
+    <string name="share_msg">Hey check out my app at: https://play.google.com/store/apps/details?id=</string>
+
+
+</resources>

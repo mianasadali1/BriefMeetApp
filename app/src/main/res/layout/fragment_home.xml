@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/imgUser"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/avatar"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="1.5dp"
+        app:layout_constraintEnd_toStartOf="@+id/txtUserName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:lines="1"
+        android:maxLines="1"
+        android:text="Good Morning, "
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:autoSizeMaxTextSize="20sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/imgUser"
+        app:layout_constraintEnd_toStartOf="@+id/scheduleBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgUser"
+        app:layout_constraintTop_toTopOf="@+id/imgUser" />
+
+    <ImageView
+        android:id="@+id/scheduleBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_add"
+        android:backgroundTint="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/imgUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtUserName"
+        app:layout_constraintTop_toTopOf="@+id/imgUser" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/top_rounded"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgUser">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/errorAnimationView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/todayLbl"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/search"
+                app:lottie_repeatMode="reverse" />
+
+            <TextView
+                android:id="@+id/errorMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/no_history_found"
+                android:textColor="@color/hint"
+                app:layout_constraintEnd_toEndOf="@+id/errorAnimationView"
+                app:layout_constraintStart_toStartOf="@+id/errorAnimationView"
+                app:layout_constraintTop_toBottomOf="@+id/errorAnimationView" />
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="16dp"
+                app:adSize="BANNER"
+                app:adUnitId="@string/banner_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/newTxtBtn" />
+
+            <TextView
+                android:id="@+id/joinTxtBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="@string/join"
+                android:textColor="@color/primaryText"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/joinBtn"
+                app:layout_constraintStart_toStartOf="@+id/joinBtn"
+                app:layout_constraintTop_toBottomOf="@+id/joinBtn" />
+
+            <ImageView
+                android:id="@+id/joinBtn"
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_primary_5dp"
+                android:padding="15dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/newBtn"
+                app:layout_constraintTop_toTopOf="@+id/newBtn"
+                app:srcCompat="@drawable/ic_join"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/newBtn"
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_meeting"
+                android:padding="15dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toStartOf="@+id/joinBtn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_add"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/newTxtBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/roboto_light"
+                android:text="@string/new_meeting"
+                android:textColor="@color/primaryText"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/newBtn"
+                app:layout_constraintStart_toStartOf="@+id/newBtn"
+                app:layout_constraintTop_toBottomOf="@+id/newBtn" />
+
+            <TextView
+                android:id="@+id/todayLbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:paddingBottom="5dp"
+                android:text="@string/today_meeting_history"
+                android:textColor="@color/primaryText"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adView" />
+
+            <TextView
+                android:id="@+id/selectionLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="(10) selected"
+                android:textColor="@color/delete"
+                app:layout_constraintStart_toStartOf="@+id/todayLbl"
+                app:layout_constraintTop_toBottomOf="@+id/todayLbl" />
+
+            <Button
+                android:id="@+id/deleteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:backgroundTint="#F44336"
+                android:text="@string/delete"
+                app:layout_constraintEnd_toEndOf="@+id/todayLbl"
+                app:layout_constraintTop_toBottomOf="@+id/errorAnimationView" />
+
+            <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                android:id="@+id/rvHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/deleteBtn"
+                app:shimmer_demo_angle="20"
+                app:shimmer_demo_child_count="4"
+                app:shimmer_demo_grid_child_count="2"
+                app:shimmer_demo_layout="@layout/row_meeting"
+                app:shimmer_demo_layout_manager_type="linear_vertical"
+                tools:listitem="@layout/itemview_meeting_history" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/errorGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="errorAnimationView,errorMsg" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/deleteGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="deleteBtn,selectionLbl" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/userGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="imgUser,txtUserName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

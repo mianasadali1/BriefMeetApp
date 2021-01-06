@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    card_view:cardBackgroundColor="@color/white"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="0dp"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardUseCompatPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <com.daimajia.swipe.SwipeLayout xmlns:swipe="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            swipe:leftEdgeSwipeOffset="0dp"
+            swipe:rightEdgeSwipeOffset="0dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:background="@color/delete"
+                    android:id="@+id/llDelete"
+                    android:gravity="center"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:backgroundTint="@color/white"
+                        android:background="@drawable/ic_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text=""
+                    android:background="@drawable/ic_circle"
+                    android:textColor="@color/colorPrimary"
+
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:id="@+id/txtNameInitial"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/primaryText"
+                        android:textSize="14sp"
+                        android:id="@+id/txtName"
+                        android:text="My Meet"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textColor="@color/secondaryText"
+                        android:textSize="12sp"
+                        android:id="@+id/txtDate"
+                        android:text="00:00"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:textColor="@color/secondaryText"
+                        android:textSize="12sp"
+                        android:id="@+id/txtTime"
+                        android:layout_marginTop="3dp"
+                        android:text="00:00"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:stateListAnimator="@null"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/start"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="20dp"
+                    app:strokeColor="@color/colorPrimary"
+                    app:strokeWidth="1.5dp" />
+
+            </LinearLayout>
+
+        </com.daimajia.swipe.SwipeLayout>
+
+
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
